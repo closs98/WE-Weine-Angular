@@ -1,0 +1,12 @@
+<div style="text-align:center">
+  <h1 [style.color]="color">
+    Willkommen zur {{ title | sorte }}!
+    <br>
+    <img alt="Weine" src="https://www.pastaweb.de/wp-content/uploads/2016/02/weine-italien.jpg" width="500px"/>
+  </h1>
+  <button (click)="onClick()">Farbänderung</button>
+</div>
+  <app-wein (deleteComp)="deleteWine($event)" [wein]="weine[0]"></app-wein>
+<div>
+
+</div>
