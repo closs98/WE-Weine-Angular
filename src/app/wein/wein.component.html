@@ -3,7 +3,7 @@
     <p>Sorte: {{wein.sorte | sorte}}</p>
     <p>Gebiet: {{wein.gebiet}}</p>
     <p>Jahr: {{wein.jahr}}</p>
-    <button (click)="onDelete()">Löschen</button>
+    <button appButtonHover [value]="1" (click)="onDelete()">Löschen</button>
   </div>
   <br>
   <div>

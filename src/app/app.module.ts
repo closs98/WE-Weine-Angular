@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { SortePipe } from './sorte.pipe';
 import { WeinComponent } from './wein/wein.component';
+import { ButtonHoverDirective } from './button-hover.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     SortePipe,
-    WeinComponent
+    WeinComponent,
+    ButtonHoverDirective
   ],
   imports: [
     BrowserModule,
