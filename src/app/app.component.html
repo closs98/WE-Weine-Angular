@@ -6,7 +6,7 @@
   </h1>
   <button (click)="onClick()">Farbänderung</button>
 </div>
-  <app-wein (deleteComp)="deleteWine($event)" [wein]="weine[0]"></app-wein>
+  <app-wein *ngFor="let wein of weine$ | async" (deleteComp)="deleteWine($event)" [wein]="wein"></app-wein>
 <div>
 
 </div>

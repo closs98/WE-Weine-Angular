@@ -1,5 +1,6 @@
-import { Component, OnInit, Input, Output, EventEmitter, HostBinding } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter, HostBinding, Inject } from '@angular/core';
 import { Wein } from '../wein';
+import { WeinService } from '../wein.service';
 
 @Component({
   selector: 'app-wein',
@@ -8,7 +9,7 @@ import { Wein } from '../wein';
 })
 export class WeinComponent implements OnInit {
 
-  constructor() { }
+  constructor(public weinService: WeinService) {}
 
   ngOnInit() {
   }
